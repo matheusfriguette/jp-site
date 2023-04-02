@@ -1,6 +1,12 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import "@/styles/index.css";
+import type { AppProps } from "next/app";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }: AppProps) => {
+  return (
+    <main className="text-black bg-light-white font-inter">
+      <Component {...pageProps} />
+    </main>
+  );
+};
+
+export default App;
